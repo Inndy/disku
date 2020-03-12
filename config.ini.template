@@ -1,0 +1,11 @@
+[disku]
+debug = false
+alert_channel = Webhook
+alert_interval = 30m
+alert_conditions = FREE < 5%%, FREE < 5G
+alert_msg = :computer: Machine: `{machine}` :mag: Path: `{path}` :boom: Condition: `{condition}` -> :page_with_curl: `{usage}`
+
+[webhook]
+; It's designed for Slack and Mattermost
+url = https://example.com/webhook/123456789-ZXhhbXBsZS1zZWNyZXQteW91LWZvdW5kLW1l
+mixin = {"channel": "devops-alert", "username": "disku"}
