@@ -23,6 +23,8 @@ def init_server():
     load_config(os.path.join(os.path.dirname(__file__), 'config.ini'))
     load_config(os.getenv('DISKU_CONFIG_FILE'))
 
+    assert app.config['disku.config_version'] == '0.0.1'
+
     alert_interval = disku.parse_time_interval(app.config.get('disku.alert_interval'))
     logger.debug('alert_interval = %ds', alert_interval)
 

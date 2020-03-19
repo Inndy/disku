@@ -1,4 +1,5 @@
 [disku]
+config_version = 0.0.1
 debug = false
 alert_channel = Webhook
 alert_interval = 30m
