@@ -106,7 +106,7 @@ Example of agent usage:
 
 @app.get('/agent.py', name='download_agent')
 def download_agent():
-    return static_file('disku-agent.py', os.path.dirname(__file__), 'text/x-python')
+    return static_file('agent.py', os.path.dirname(__file__), 'text/x-python')
 
 init_server()
 
