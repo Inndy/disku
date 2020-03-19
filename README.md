@@ -4,7 +4,15 @@ This is a server/client based utility to monitor disk usage
 
 ## Requirements
 
-`python3 -m pip install -r requirements.txt` (you may need to use `sudo -H`)
+### Server Requirements
+
+- python 3.5+
+- [pip](https://pip.pypa.io/en/stable/installing/)
+- `python3 -m pip install -r requirements.txt` (you may need to use `sudo -H`)
+
+### Client Requirements
+
+- python 3.5+
 
 ## Server Configuration
 
