@@ -33,7 +33,7 @@ def fire_alerts(buffer):
     alert_channel = disku.AlertChannel.load(app.config)
     alert_channel.fire('\n\n'.join(buffer.values()))
 
-@app.post('/report', name='reporting')
+@app.post('/disku/report', name='reporting')
 def report():
     if not request.json or \
             'client_info' not in request.json or \
